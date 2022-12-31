@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Multipage Education Website Using HTML, CSS & JavaScript</title>
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        body {background-image: url("bg-texture.png");
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html"><h4>ENB</h4></a>
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container header__container">
+            <div class="header__left">
+                <h1>Hỗ Trợ Các Sinh Viên</h1>
+                <p>Cần thiết vào đầu năm thời điểm 
+                 mà có tân sinh viên nhập học nên đó là lúc 
+                các tân sinh viên 
+                chưa có quá nhiều thông tin về trường 
+                và trang web này 
+                sẽ hỗ trợ và cung cấp thông tin và chỉ dẫn.
+                </p>
+                <a href="courses.html" class="btn btn-primary">Get Started</a>
+            </div>
+
+            <div class="header__right">
+                <div class="header__right-image">
+                    <img src="people-discussing-about-business-in-park.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="categories">
+        <div class="container categories__container">
+            <div class="categories__left">
+                <h1>Tài Liệu</h1>
+                <p>
+                    Các Môn Học Hỗ Trợ Sinh Viên 
+                </p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="categories__right">
+                <article class="category">
+                    <span class="category__icon">
+                        <i class="uil uil-calculator-alt"></i>
+                    </span>
+                    <h5>Toán Cao Cấp</h5>
+                    <p>Advanced Math</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon">
+                        <i class="uil uil-diary"></i>
+                    </span>
+                    <h5>An Ninh Quốc Phòng</h5>
+                    <p>Nation Security</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon">
+                        <i class="uil uil-trophy"></i>
+                    </span>
+                    <h5>Triết Học Mác-lê-nin</h5>
+                    <p>Marxist Philosophy</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon">
+                        <i class="uil uil-github"></i>
+                    </span>
+                    <h5>Cơ Sở Lập Trình</h5>
+                    <p>Program Base</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon">
+                        <i class="uil uil-silent-squint"></i>
+                    </span>
+                    <h5>Anh văn</h5>
+                    <p>English Language</p>
+                </article>
+
+                <article class="category">
+                    <span class="category__icon">
+                        <i class="uil uil-desktop"></i>
+                    </span>
+                    <h5>Công Nghệ Thông Tin</h5>
+                    <p>Information Technolory</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses">
+        <h2>Các Môn Học Phổ Biến Của Ngành IT</h2>
+        <div class="container courses__container">
+            <article class="course">
+                <div class="course__image">
+                    <img src="https://cdn.thuvienphapluat.vn/phap-luat/2022-2/TN/140922/Chuan-chuong-trinh-dao-tao.jpg" alt="">
+                </div>
+                <div class="course__info">
+                    <h4>Cơ sở lập trình</h4>
+                    <p>
+                       Data Base 
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course__image">
+                    <img src="https://uni.fpt.edu.vn/Data/Sites/1/News/4545/ky-thuat-phan-mem-va-cong-nghe-thong-tin-(1).jpg" alt="">
+                </div>
+                <div class="course__info">
+                    <h4>Công Nghệ thông tin</h4>
+                    <p>
+                        Information Technolory
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course__image">
+                    <img src="https://admin.yersin.edu.vn//Uploads/images/nen-chon-hoc-van-bang-2-ngon-ngu-anh-1.jpg" alt="">
+                </div>
+                <div class="course__info">
+                    <h4>Anh Văn</h4>
+                    <p>
+                        English Language 
+                    </p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="faqs">
+        <h2>^-^Các Câu Hỏi Ôn Tập môn GDQP^-^</h2>
+        
+        <div class="container faqs__container">
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Câu 1: Chủ tịch Hồ Chí Minh xác định thái độ của chúng ta đối với chiến tranh là: ?</h4>
+                    <p>
+                        <br>A.  Phản đối tất cả các cuộc chiến tranh<br>
+                        <br>B.  Ủng hộ các cuộc chiến tranh chính nghĩa chống áp bức, nô dịch<br>
+                        <br>C.  Phản đối các cuộc chiến tranh phản cách mạng<br>
+                        <br>D.  Ủng hộ chiến tranh chính nghĩa, phản đối chiến tranh phi nghĩ<br><br>
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Câu 2: Chủ tịch Hồ Chí Minh khẳng định sự ra đời của quân đội ta là thế nào: ?</h4>
+                    <p>
+                        <br>A. Là một tất yếu có tính quy luật trong đấu tranh giai cấp, đấu tranh dân tộc ở Việt Nam<br>
+                        <br>B. Là một hiện tượng ngẫu nhiên trong quá tŕnh đấu tranh cách mạng của dân tộc Việt Nam<br>
+                        <br>C. Là một sự kế thừa trong lịch sử chống giặc ngoại xâm<br>
+                        <br>D. Là một hiện tượng tự phát do đ̣i hỏi của chiến tranh cách mạng<br>
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Câu 3:  Hai nhiệm vụ chiến lược của cách mạng Việt Nam hiện nay là gì: ?<br></h4>
+                    <p>
+                        <br>A.  Xây dựng phát triển kinh tế và quốc phòng.<br>
+                        <br>B.  Xây dựng đất nước và bảo vệ tổ quốc.<br> 
+                        <br>C.  Xây dựng chủ nghĩa xă hội và bảo vệ tổ quốc XHCN.<br>
+                        <br>D.  Xây dựng phát triển kinh tế và quốc pḥng, an ninh nhân dân.<br><br><br>
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Câu 4: Củng cố xây dựng nền quốc phòng,an ninh nhân dân,lực lượng nào là nồng cốt: ?</h4>
+                    <p>
+                        <br>A. Lực lượng quân đội nhân dân và công an nhân dân.<br>
+                        <br>B. Quân chúng nhân dân lao động và an ninh nhân dân.<br>
+                        <br>C. Bộ đội chủ lực, bộ đội địa phương và dân quân tự vệ.<br>
+                        <br>D. Lực lượng quân đội, lực lượng an ninh nhân dân.<br>
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Câu 5:  Đối tượng tác chiến của chiến tranh nhân dân bảo vệ Tổ quốc là: ?</h4>
+                    <p>
+                        <br>A.  Chủ nghĩa đế quốc và chủ nghĩa ly khai.<br>
+                        <br>B.  Chủ nghĩa đế quốc và các thế lực phản động.<br>
+                        <br>C.  Các thế lực phản cách mạng trong và ngoài nước.<br>
+                        <br>D.  Chủ nghĩa khủng bố quốc tế.<br><br><br><br>
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Câu 6:  Trong chiến tranh nhân dân bảo vệ Tổ quốc phải kết hợp chặt chẽ như thế nào: ?</h4>
+                    <p>
+                        <br>A.  Chống quân xâm lược với chống bọn khủng bố.<br>
+                        <br>B.  Chống địch tấn công từ bên ngoài với bạo loạn lật đổ từ bên trong.<br>
+                        <br>C.  Chống bạo loạn lật đổ với trấn áp bọn phản động trong nước.<br>
+                        <br>D.  Chống bạo loạn lật đổ với các hoạt động phá hoại khác.<br>
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Câu 7:  Các Lực lượng vũ trang nhân dân ba thứ quân của Việt Nam gồm: ?<br></h4>
+                    <p>
+                        <br>A.  Quân đội, công an, dân quân tự vệ.<br>
+                        <br>B.  Bộ đội thường trực, lực lượng dự bị, dân quân tự vệ.<br>
+                        <br>C.  Bộ đội chủ lực, bộ đội địa phương, dân quân tự vệ.<br>
+                        <br>D.  Bộ đội chủ lực, bộ đội địa phương, bộ đội biên phòng.<br>
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Câu 8:   Quân đội ta mang bản chất giai cấp công nhân đồng thời có tính gì: ?</h4>
+                    <p>
+                        <br>A.  Tính quần chúng sâu sắc.<br>
+                        <br>B.  Tính phong phú đa dạng.<br>
+                        <br>C.  Tính nhân dân, tính dân tộc sâu sắc.<br>
+                        <br>D.  Tính phổ biến, rộng răi.<br><br><br><br>
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    
+
+    <section class="container testimonials__container mySwiper">
+        <h2>Danh Ngôn Người Nổi Tiếng</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Nikola_tesla_color.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Nikola Tesla</h5>
+                    <small>(1856-1943)</small>
+                </div>
+                <div class="testimonial__body">
+                    <a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Điều mà người này gọi là Chúa trời, thì người khác gọi là luật vật lý.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br></a>
+                    <h5>
+                        <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What one man calls God, another calls the laws of physics.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+                    </h5>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Immanuel_Kant_001.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Immanuel Kant</h5>
+                    <small>(1724-1804)</small>
+                </div>
+                <div class="testimonial__body">
+                    <a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vẻ đẹp không nằm ở đôi má hồng của người thiếu nữ mà ở trong mắt của kẻ si tình?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <h5>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beauty is not the eyes of the beholder.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                    </h5>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="	https://i.ex-cdn.com/nhadautu.vn/files/homai/2018/10/21/isaac-newton-1136.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Isaac Newton</h5>
+                    <small>(1642-1726)</small>
+                </div>
+                <div class="testimonial__body">
+                    <a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Điều ta biết là giọt nước, điều ta chưa biết là đại dương.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br></a>
+                    <h5>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What we know is a drop, what we don't know is an ocean.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                    </h5>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Albert_Einstein_-_Colorized.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Albert Einstein</h5>
+                    <small>(1879-1955)</small>
+                </div>
+                <div class="testimonial__body">
+                    <a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chỉ có hai điều là vô hạn: vũ trụ và sự ngu xuẩn của con người, và tôi không chắc lắm về điều đầu tiên.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br></a>
+                    <h5>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only two things are infinite, the universe and human stupidity, and I'm not sure about the former.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                    </h5>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="https://i.pinimg.com/736x/31/d8/e6/31d8e6f99b59bb7f7a9d435dd99eeb31.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Chủ tịch Hồ Chí Minh</h5>
+                    <small>((1980-1969)</small>
+                </div>
+                <div class="testimonial__body">
+                    <a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Có tài mà không có đức là người vô dụng, có đức mà không có tài thì làm việc gì cũng khó...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br></a>
+                    <h5>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Having talent without virtue is useless, having virtue without talent is not difficult at all...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                    </h5>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index.html" class="footer__logo"><h4>Favt</h4></a>
+                <p>
+                    Welcome Website 
+                </p>
+            </div>
+
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Courses</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__3">
+                <h4>Primacy</h4>
+                <ul class="primacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>0866179832</p>
+                    <p>Favt@gmail.com</p>
+                </div>
+
+                <ul class="footer__socials">
+                    <li>
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-instagram-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__copyright">
+            <small>Copyright &copy; Favt Cooding</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
+</body>
+</html>

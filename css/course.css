@@ -1,0 +1,20 @@
+.course {
+    margin-top: 10rem;
+
+}
+
+.course_container {
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap:2rem;
+}
+
+.course {
+    background: var(--color-bg1);
+    text-align: center;
+    border:  1px solid transparent;
+}
+
+.course_info {
+    padding: 2rem;
+}
